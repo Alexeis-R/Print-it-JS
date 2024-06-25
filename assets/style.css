@@ -54,7 +54,7 @@ table {
 	border-spacing: 0;
 }
 body {
-
+	border: 2px solid gold;
 }
 section {
 	margin-block: 6em;
@@ -125,12 +125,19 @@ header {
 /* Gestion des fleches du carrousel */
 #banner .arrow {
 	position: absolute;
+	display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+	justify-content: space-between;
 }
 #banner .arrow_left {
 	left: 10px;
+	cursor: pointer;
 }
 #banner .arrow_right {
 	right: 10px;
+	cursor: pointer;
 }
 /* Gestion des points du carrousel */
 .dots {
