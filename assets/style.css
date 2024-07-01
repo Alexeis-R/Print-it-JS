@@ -54,7 +54,7 @@ table {
 	border-spacing: 0;
 }
 body {
-	border: 2px solid gold;
+	margin: 0;
 }
 section {
 	margin-block: 6em;
@@ -125,19 +125,15 @@ header {
 /* Gestion des fleches du carrousel */
 #banner .arrow {
 	position: absolute;
-	display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    width: 100%;
-	justify-content: space-between;
+}
+.arrow:hover {
+	cursor: pointer;
 }
 #banner .arrow_left {
 	left: 10px;
-	cursor: pointer;
 }
 #banner .arrow_right {
 	right: 10px;
-	cursor: pointer;
 }
 /* Gestion des points du carrousel */
 .dots {
@@ -145,6 +141,7 @@ header {
 	bottom: 40px;
 	display: flex;
 }
+
 .dot {
 	margin-inline: 5px;
 	width: 13px;
@@ -154,6 +151,10 @@ header {
 	border-radius: 100%;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);;
 }
+.dot:hover{
+	cursor: pointer;
+}
+
 .dot_selected {
 	background-color: #fff;
 }
